@@ -52,14 +52,14 @@
             });
 
             $(document).keydown(function (event) {
-                console.log("q键被按下");
                 if (
                     (event.ctrlKey || event.metaKey) &&
                     (event.keyCode == 81 || event.keyCode == 69)
                 ) {
+                    console.log("q键被按下");
                     event.preventDefault();
-                    $("#mfa_srch")[0].click();
-                    $("#sb_form_q").select();
+                    $("#mfa_srch")[0]?.click();
+                    $("#sb_form_q")?.select();
                 }
             });
         },
