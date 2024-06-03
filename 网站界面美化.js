@@ -60,6 +60,8 @@
                     event.preventDefault();
                     $("#mfa_srch")[0]?.click();
                     $("#sb_form_q")?.select();
+                    document?.documentElement?.scrollTop = 0;
+                    document?.body?.scrollTop = 0;
                 }
             });
         },
@@ -83,4 +85,3 @@
         windowDpmainTypes[webSite]();
     };
 })();
-
